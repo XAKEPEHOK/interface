@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.block {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  float: left;
+  width: 33.3333%;
+  height: 48%;
+  border: medium solid #fff;
+  background: #e8e8e8;
+  position: relative;
+  overflow: hidden;
+}
+.block > * {
+  border: thin solid rgba(83, 9, 5, 0.49);
+  background: rgba(115, 115, 115, 0.49);
+  position: absolute;
+}
+.block > *.selected {
+  background: rgba(78, 80, 145, 0.47);
+  border: thin solid rgba(3, 6, 83, 0.48);
+}
+.block:hover > * {
+  background: rgba(78, 80, 145, 0.47);
+  border: thin solid rgba(3, 6, 83, 0.48);
+}
+#statusbar {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  float: left;
+  position: relative;
+  height: 4%;
+  padding-top: 5px;
+  padding-left: 20px;
+  width: 100%;
+  background: #cecece;
+  border-top: medium solid #fff;
+}
